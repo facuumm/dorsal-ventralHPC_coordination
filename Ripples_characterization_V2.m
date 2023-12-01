@@ -3,7 +3,7 @@ clc
 close all
 
 %% Parameters
-path = {'E:\Rat127\Ephys\pyr';'E:\Rat128\Ephys\in_pyr\ready';'E:\Rat128\Ephys\in_pyr\to_finish_spikesorting\usable';'E:\Rat103\usable';'E:\Rat132\recordings\in_pyr'};%List of folders from the path
+path = {'E:\Rat127\Ephys\pyr';'E:\Rat128\Ephys\in_pyr\to_finish_spikesorting\usable';'E:\Rat103\usable';'E:\Rat132\recordings\in_pyr';'E:\Rat165\in_pyr'};%List of folders from the path
 
 %Sleep
 time_criteria = 600; %time criteria to define the maximal time of sleep to include
@@ -83,7 +83,7 @@ Burst_Index_allB_vRipples = []; Burst_Index_allB_dRipples = [];
 Burst_Index_allR_vRipples = []; Burst_Index_allR_dRipples = [];
 Burst_Index_allA_vRipples = []; Burst_Index_allA_dRipples = [];
 
-%% Main loop to iterate across sessions
+%% Main tloop to iterate across sessions
 for tt = 1:length(path)
     %List of folders from the path
     files = dir(path{tt});

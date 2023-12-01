@@ -9,6 +9,13 @@ function [m,p] = SimilarityIndex(patterns1,patterns2,permutation)
 %
 % OUTPUT
 % m: matrix storing the similarity index between patterns from both inputs.
+% p: matrix, 1 if the value is higher comapred with the 99th percentile
+%
+%
+% other functions: SimilaritySurrogate
+% Morci Juan Facundo 09/2023
+
+
 m = [];
 for i  = 1 : size(patterns1,2)
     x = patterns1(:,i);

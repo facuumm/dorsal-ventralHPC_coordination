@@ -9,6 +9,8 @@ function p = SimilaritySurrogate(patterns1,patterns2,permutations)
 %
 % OUTPUT
 % m: matrix storing 99th percentile of a surrogated.
+%
+% Morici Juan Facundo 09/2023
 m = [];
 for iii = 1 : permutations
 mm = [];

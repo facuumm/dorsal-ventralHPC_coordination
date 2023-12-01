@@ -35,7 +35,7 @@ function [Members , AssemblyTemplates] = assembly_patterns(SpikeCount,opts)
 % Please send bug reports to vitor@neuro.ufrn.br (V�tor)
 %
 % Adapted by Morici Juan Facundo 07/2023
-% - Otsu and Mean thresholding for assemblie's members detection
+% - Otsu, Mean and 1/Sqrt(N) thresholding for assemblie's members detection
 % - The sign of the AssemblyTemplates was defined using the max(abs(template))
 %   Example: If the max(abs(template)) was a negative value, the templated was
 %   multiplied by -1

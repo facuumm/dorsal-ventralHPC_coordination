@@ -1,3 +1,7 @@
+
+
+
+function [SpksTrains , Bins , C] = spike_train_construction(Spks, clusters, type, binSize, limits, events, normalization, smooth)
 % Spike Trains matrix construction
 %
 % SpksTrains = spike_train_construction(Spks, clusters, type, binSize, limits, events, normalization)
@@ -33,10 +37,6 @@
 %
 % Morici Juan Facundo, 11/06/2023
 % Other funtions: binspikes, gaussfilt 
-
-
-function [SpksTrains , Bins , C] = spike_train_construction(Spks, clusters, type, binSize, limits, events, normalization, smooth)
-
 
 freq = 1/binSize;
 SpksTrains = [];

@@ -1,3 +1,4 @@
+function info= spatial_info_rate(RateMap, OccMap)
 % Spatial Information calculation based on Skaags et al 1993
 %
 % info = spatial_info_rate(RateMap, pos)
@@ -10,9 +11,6 @@
 % info: float, Spatial Information value
 % Based on Skaags et al: Theta Phase Precession in Hippocampal Neuronal ...
 % Silva Azul 2023 - edited by Morici Juan Facundo
-
-
-function info= spatial_info_rate(RateMap, OccMap)
 
 OccMap(isnan(RateMap))=nan;    
 OccMap=OccMap/nansum(OccMap(:));

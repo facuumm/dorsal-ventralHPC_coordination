@@ -1,3 +1,4 @@
+function shuffle = ShuffleSpks(spks)
 % This function shuffle spikes 100 keeping the inter-spike intevals.
 %
 % --- Inputs ---
@@ -6,9 +7,6 @@
 % --- OUTPUT ---
 % shuffle: vector, shuffle spike times.
 % Silva Azul 2023 - edited by Morici Juan Facundo
-
-function shuffle = ShuffleSpks(spks)
-
     a = min(spks) + rand*10;% 1° tiempo
     isi = diff(spks);
     isi_per = isi(randperm(length(isi)));%shuffle isi

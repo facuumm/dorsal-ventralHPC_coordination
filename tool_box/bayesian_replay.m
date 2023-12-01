@@ -1,3 +1,4 @@
+function probability = bayesian_replay(RateMap, nSpks, start, stop)
 % Probability calculation of being at different positions using spiking
 % activity during an event based on Bayesian probability.
 % Wirtsgafter & Wilson 2021: Bayesian Algorithmic Decoding of Acceleration
@@ -24,17 +25,16 @@
 % Morici Juan Facundo, 09/06/2023
 
 
-function probability = bayesian_replay(RateMap, nSpks, start, stop)
-    % Variables definition
-    x = RateMap;
-    p = nSpks;
-    t = stop - start;
-    
-    
-    f = x .^ p;
-    y = prod(f , 1);
-    y = y .* exp(-t*sum(x));
-    c = sum(y);
-    probability = y ./ c;
-    clear x p t f y c
+% Variables definition
+x = RateMap;
+p = nSpks;
+t = stop - start;
+
+
+f = x .^ p;
+y = prod(f , 1);
+y = y .* exp(-t*sum(x));
+c = sum(y);
+probability = y ./ c;
+clear x p t f y c
 end

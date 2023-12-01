@@ -1,3 +1,4 @@
+function q = SkaggsRandom(spks, pos, Nspikes, OccMap, Xedges)
 % This function asign random positions to the spikes 100 times, each time 
 % skaggs was calculated and then 90-quantile was defined.
 %
@@ -10,8 +11,6 @@
 % --- OUTPUT ---
 % q: float, 50-quantile from random skaags values.
 % Silva Azul 2023 - edited by Morici Juan Facundo
-
-function q = SkaggsRandom(spks, pos, Nspikes, OccMap, Xedges)
 
 info = zeros(100,1);
 for S = 1:100
